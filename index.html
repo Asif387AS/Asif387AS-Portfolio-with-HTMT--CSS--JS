@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/f754a6d17f.js" crossorigin="anonymous"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-top: 9rem;
+    }
+
+    .swiper-{
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center ext vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      /* flex-direction: column; */
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-mg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body class="sticky">
+  <header class="header active ">
+    <img src="images/logo1.png" class="logo" alt="logo" />
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a href="/index.html" class="nav-link home-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link about-link">About</a></li>
+        <li><a href="services.html" class="nav-link services-link">Services</a></li>
+        <li><a href="#porfolio" class="nav-link portfolio-link">Portfolio</a></li>
+        <li><a href="/contact.html" class="nav-link contact-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-navbar-btn">
+      <!-- <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon> -->
+      <!-- <ion-icon name="menu-outline"></ion-icon> -->
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
+  </header>
+
+  <!-- --------------------------
+    Hero section start 
+    -------------------------- -->
+  <main>
+    <section class="section-hero section">
+      <div class="container grid grid-two-column">
+        <!-- left side  -->
+        <div class="section-hero-data">
+          <p class="hero-top-data">this is me</p>
+          <h1 class="hero-heading">asif technical</h1>
+          <p class="hero-para">
+            I'm asif zahoor. A full stack web developer and freelancer. i
+            interest in javaScript.
+          </p>
+          <div>
+            <a href="#contact" class="btn hireme-btn">Hire me</a>
+          </div>
+        </div>
+        <!-- right section  -->
+        <div class="section-hero-img">
+          <img src="images/p7.webp">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================Bion data section start =============== -->
+    <section class="section-biodata section">
+      <div class="container grid grid-two-column">
+        <div class="bio-image">
+          <img src="/images/p7.webp" data-src="/images/coding.jpg" class="lazy-img" loading="lazy" alt="image" />
+        </div>
+
+        <!-- right side bi data  -->
+        <div class="bio-data">
+          <h2 class="common-heading">my bio-data</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem quas nobis deleniti? Dolore, blanditiis suscipit!
+            Magnam suscipit explicabo quas dolor, at exercitationem hic
+            maiores i fsdf sdfasddsf sdf fdsfas fdsfsf sdfsafsafa
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            fugiat quas quis doloribus. Sed labore ex consequuntur vero nisi
+            repellat fugiat eaque.
+          </p>
+
+          <div class="bio-data-stats">
+            <div class="bio-stats">
+              <h3>Design</h3>
+              <div class="bio-progress-bar progress-1">
+                <span>80%</span>
+              </div>
+            </div>
+
+            <!-- <div class="bio-stats">
+                        <h3>Android</h3>
+                        <div class="bio-progress-bar progress-2"></div>
+                        <span>70%</span>
+                </div> -->
+
+            <div class="bio-stats">
+              <h3>HTML</h3>
+              <div class="bio-progress-bar progress-3">
+                <span>99%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>CSS</h3>
+              <div class="bio-progress-bar progress-4">
+                <span>90%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>javaScript</h3>
+              <div class="bio-progress-bar progress-5">
+                <span>85%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>MERN</h3>
+              <div class="bio-progress-bar progress-6">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bio-data-btn">
+            <a href="#" class="btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================our portofolio section start =============== -->
+    <section class="section section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="common-heading">Latest works</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ullam
+          veritatis quas minima ad tempora aspernatur eos saepe assumenda,
+          delectus sequi ut dolores deleniti rem! Impedit blandi
+        </p>
+      </div>
+      <div class="p-btns">
+        <div class="btn p-btn" data-btn-num="1">WEBSITE</div>
+        <div class="btn p-btn" data-btn-num="2">YOUTUBE</div>
+        <div class="btn p-btn" data-btn-num="3">DESIGN</div>
+      </div>
+      <div class="grid grid-three-column portfolio-images">
+        <div class="img-overlay p-btn--2">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 1</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--1">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 2</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 3</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--1">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 4</a>d
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2 p-btn--3">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 5</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3">
+          <img sr/>
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 6</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================work counter sections ================================ -->
+    <section class="section section-work-data grid grid-four-column">
+      <div class="">
+        <h2 class="counter-numbers" data-number="2000">0+</h2>
+        <p>professional clients</p>
+      </div>
+      <div class="">
+        <h2 class="counter-numbers" data-number="6000">0+</h2>
+        <p>Happy clients</p>
+      </div>
+      <div class="">
+        <h2 class="counter-numbers" data-number="5000">0+</h2>
+        <p>project completed</p>
+      </div>
+      <div class="">
+        <h2 class="counter-numbers" data-number="3000">0+</h2>
+        <p>cups of coffee</p>
+      </div>
+    </section>
+
+    <!-- ===========================services section start ================================= -->
+    <section class="section >
+      <div class="container">
+        <h2 class="common-heading">Services offer</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ullam 
+          veritatis quas minima ad tempora aspernatur eos saepe assumenda,
+          delectus sequi ut dolores deleniti rem! Impedit blandi
+        </p>
+      </div>
+
+      <div class="container grid grid-three-column">
+        <div class="service-box">
+          <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+        <div class="service-box">
+          <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
+          <h3>Mobile Apps</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+        <div class="service-box">
+          <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
+          <h3>Mobile Interface</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+        <div class="service-box">
+          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+          <h3>Photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+        <div class="service-box">
+          <ion-icon name="images-sharp" class="service-icon"></ion-icon>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+        <div class="service-box">
+          <ion-icon name="logo-react" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus rem ullam illo odit rerum, suscipit sapiente dicta.
+            Numquam labore quidem asperiores laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+<!-- =====================testimonial section ============================ -->
+    <!-- Swiper -->
+    <section class="section section-testimonial">
+      <div class="container">
+
+        <h2 class="common-heading">Happy Client Works</h2>
+      </div>
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper  container">
+      <!-- ==================section start ================= -->
+      <div class="swiper-slide ">
+        <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p4.jfif" alt="asif">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p4.jfif" >
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p2.png" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/coding.jpg" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p3.jpg" alt="">
+          </figure>
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p5.webp" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p6.webp" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p7.webp" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p4.jfif" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="swiper-client-msg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi at error recusandae itaque ipsum
+             voluptate excepturi aliquid.</p>
+        </div>
+        <div class="swiper-client-data grid grid-two-column">
+          <figure>
+            <img src="images/p4.jfif" alt="">
+          </figure>
+          <div class="client-data-details">
+            <p class="para1">Asif Technical</p>
+            <p>Enterprenuer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="section section-freelancing">
+  <div class="overlay">
+    <div class="container">
+    <h2>I am <span>Available</span> for freelancing</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing te voluptas mollitia? Placeat, modi corporis!</p>
+      <a href="/about.html" class="btn">Hire me</a>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- ======================contact section ============================= -->
+<section class="section section-contact" id="contact-section">
+  <div class="container">
+    <h2 class="common-heading">Contact Us</h2>
+  </div>
+
+    <div class="section-contact-main contact-container">
+      <form action="">
+        <div class="grid grid-two-column">
+          <div>
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Username" name="username" required autocomplete="off" >
+          </div> 
+          <div>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="demo@mail.com" name="email" required autocomplete="off">
+          </div> 
+        </div>
+        <div>
+          <label for="subject"></label>
+          <input type="text" id="subject" placeholder="subject" name="subject" required autocomplete="off" >
+        </div> 
+        <div>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" placeholder="Message" cols="30" rows="10" required autocomplete="off"></textarea>
+        </div> 
+        <div>
+          <input type="submit" value="send message" class="btn">
+        </div>
+      </form>
+    </div>
+</section>
+
+
+<!-- =============================footer section start ============================== -->
+<footer class="footer">
+  <div class="container  footer-section footer-grid">
+    <div class="f-about">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cum quis!</p>
+    </div>
+    <div class="f-links">
+      <h3>Links</h3>
+      <ul>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Home</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">About</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Services</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Portfolio</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="f-services">
+      <h3>Services</h3>
+      <ul>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web Design</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web Development</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Online Courses</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">MERN Projects</a></li>
+        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youtube courses</a></li>
+      </ul>
+    </div>
+
+    <div class="f-address">
+      <h3>Have a question?</h3>
+      <address>
+        <div>
+          <p>
+            <span><ion-icon name="location-outline"></ion-icon></span>
+           Faisalabad, Pakistan 
+          </p>
+        </div>
+        <div>
+          <p>
+            <span><ion-icon name="call-outline"></ion-icon></span>
+           <a href="tel:+923096689124">+92 3096689124</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <span><ion-icon name="mail-outline"></ion-icon></span>
+           <a href="mailto:asifalikodhanjutt3@gmail.com">asifalikodhanjutt3@gmail.com</a>
+          </p>
+        </div>
+      </address>
+    </div>
+  </div>
+  <div class="container">
+    <div class="f-social-icons">
+      <a href="#"><ion-icon  class="icons" name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon  class="icons" name="logo-discord"></ion-icon></a>
+      <a href="#"><ion-icon  class="icons" name="logo-youtube"></ion-icon></a>
+    </div>
+    <div class="f-credits">
+      <p>Copyright ©2022 All rights are reserved | This templates is made with &hearts; by asif ali </p>
+    </div>
+  </div>
+</footer>
+</main>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      // autoplay:{
+      //   delay:2500,
+      //   // disableOnInteraction:fasle,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</html>
